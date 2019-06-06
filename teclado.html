@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="steclado.js"></script>
+    <title>Testando Eventos</title>
+</head>
+<body>
+    <form method="POST" onSubmit="return validar()">
+        <input type="text" name="nome" id="nome" onFocus="focou()" onBlur="desfocou()"/>
+        <br/>
+        <br/>
+        <select name="cidade" onChange="mudouOpcao(this)">
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Belo Horizonte</option>
+            <option>Recife</option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>
